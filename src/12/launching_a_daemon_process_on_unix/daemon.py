@@ -73,7 +73,7 @@ if __name__ == '__main__':
         try:
             daemonize(PIDFILE,
                       stdout='/tmp/daemon.log',
-                      stderr='/tmp/dameon.log')
+                      stderr='/tmp/daemon.log')
         except RuntimeError as e:
             print(e, file=sys.stderr)
             raise SystemExit(1)
